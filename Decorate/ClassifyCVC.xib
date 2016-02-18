@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ClassifyCVC">
+            <rect key="frame" x="0.0" y="0.0" width="149" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="149" height="170"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eMH-6s-6wj">
+                        <rect key="frame" x="-1" y="0.0" width="150" height="136"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7q-S5-AsH">
+                        <rect key="frame" x="0.0" y="136" width="149" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="eMH-6s-6wj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="B0G-nH-QgI"/>
+                <constraint firstItem="d7q-S5-AsH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CaB-dg-9Pp"/>
+                <constraint firstAttribute="bottom" secondItem="d7q-S5-AsH" secondAttribute="bottom" id="HOd-YT-ZwQ"/>
+                <constraint firstItem="d7q-S5-AsH" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="J5j-hu-qci"/>
+                <constraint firstItem="eMH-6s-6wj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-1" id="MZ0-up-aJt"/>
+                <constraint firstItem="eMH-6s-6wj" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.8" id="Q9S-xS-Zts"/>
+                <constraint firstItem="d7q-S5-AsH" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="dEd-4h-75D"/>
+                <constraint firstAttribute="trailing" secondItem="eMH-6s-6wj" secondAttribute="trailing" id="jnE-8s-d3Z"/>
+            </constraints>
+            <size key="customSize" width="119" height="275"/>
+            <connections>
+                <outlet property="filename" destination="eMH-6s-6wj" id="nba-g4-sfO"/>
+                <outlet property="title" destination="d7q-S5-AsH" id="5ZR-Xj-xnr"/>
+            </connections>
+            <point key="canvasLocation" x="379.5" y="397"/>
+        </collectionViewCell>
+    </objects>
+</document>

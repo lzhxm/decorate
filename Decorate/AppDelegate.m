@@ -7,16 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
+@property (nonatomic,strong) HomeViewController *rootVC;
 @end
-
+#define ScreenW [UIScreen mainScreen].bounds.size.width
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    _rootVC = [[HomeViewController alloc] init];
+     UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:_rootVC];
+    navigation.navigationBar.hidden = YES;
+   
+    self.window.rootViewController = navigation;
     return YES;
 }
 
